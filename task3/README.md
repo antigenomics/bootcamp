@@ -11,9 +11,9 @@ Using raw human Immunoglobulin Heavy Chain sequencing data calculate somatic hyp
 * The graph should be computed as follows:
   * Connect mutation sets ℳ<sub>1</sub> and ℳ<sub>2</sub> with a directed edge ``1->2`` if ℳ<sub>1</sub> ∈ ℳ<sub>2</sub>
   * Simplify graph by removing ``1->3`` edge for ``1->2,1->3`` subgraphs
-  * Choose smallest mutation set 𝓂 for each subgraph
+  * Choose smallest mutation set 𝓂 for each connected subgraph
     * For each 𝓂<sub>1</sub> search for 𝓂<sub>2</sub> with highest overlap, create a virtual node with 𝓂<sub>0</sub> := 𝓂<sub>1</sub> ∩ 𝓂<sub>2</sub> and ``0->1,0->2`` edges
-    * Collapse virtual nodes, leaving only unique ones
+    * Collapse virtual nodes, leaving only unique ones.
     * Repeat until the mutation set intersection is empty for all virtual node pairs or there is only one top virtual node remaining at current step
     * Assign top-level virtual node(s) to "germline" node with ``0`` mutations
 * *(Optional)* Visualize in R with [igraph](https://cran.r-project.org/web/packages/igraph/index.html).
