@@ -1,4 +1,4 @@
-## Task 2
+## Task 2: Building CDR3 sequence similarity graph.
 
 Read in clonotype table (``sample.txt.gz``) and build a graph connecting similar CDR3 sequences.
 

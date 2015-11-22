@@ -1,4 +1,4 @@
-## Task 1
+## Task 1: Counting V-J junctions
 
 Read in a FASTQ file (``reads.fastq.gz``), align to germline sequences of Variable (V) and Joining (J) segments (``segments.txt``) and report V-J pair counts.
 
@@ -18,13 +18,13 @@ The task is performed using few basic classes from MiLib:
 import com.milaboratory.milib.*;
 
 // FASTQ file reading
-new SingleFastqReader();
+SingleFastqReader reader = new SingleFastqReader();
 SingleRead read;
-for ((read = take()) != null) {
+for ((read = reader.take()) != null) {
 	...
 }
 
-// Handling reference sequences
+// Wrapping reference sequences
 new AminoAcidSequence();
 
 // Alignment
