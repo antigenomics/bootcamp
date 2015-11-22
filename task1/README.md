@@ -4,13 +4,15 @@ Read in a FASTQ file (``reads.fastq.gz``), align to germline sequences of Variab
 
 ### Summary
 
-* Each read should be aligned to all possible Variable and Joining segments.
-* A single best-matching V and J segment should be selected for each read based on alignment score. If the number of bases aligned aligned to a segment is less than 15 the read should be discarded.
-* A summary table holding Variable and Joining segment name and corresponding pair count should be provided as output.
+Using raw human TCR beta sequencing data:
+
+* Align each sequencing read to all possible V and J segments, 
+* Select top V and J matches using alignment score, discard sequencing reads in case the number of aligned bases for V or J.
+* Generate a summary table with pairs of V and J segment names and corresponding count.
 
 ### Classes and snippets
 
-The task is performed using few basic classes from MiLib.
+The task is performed using few basic classes from MiLib:
 
 ```java
 import com.milaboratory.milib.*;

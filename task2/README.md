@@ -4,6 +4,8 @@ Read in clonotype table (``sample.txt.gz``) and build a graph connecting similar
 
 ### Summary
 
+Using human Immunoglobulin Heavy Chain clonotype table:
+
 * Read in clonotype sample and index clonotype CDR3 sequences using sequence tree map.
 * Find all clonotype pairs that have no more than 2 mismatches, 1 insertion, 1 deletion and no more than 2 mutations total difference between CDR3 sequences.
 * Report all edges connecting such clonotype pairs. Simplify the graph: remove duplicate edges, for ``a -> b, b -> c, a -> c`` cases ``a -> c`` edges should also be removed.
