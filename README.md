@@ -14,7 +14,7 @@ Solutions for tasks listed in this repository are to be implemented in [Java](ht
 
 To facilitate implementation and get familiar with our coding practices the following two libraries should be used when solving tasks provided here:
 
-* [MiLIB](https://github.com/milaboratory/milib) is a core library for working with sequencing data, nucleotide and amino acid sequences, sequence alignment and pattern matching. The library is avalable in Maven central repository.
+* [MiLib](https://github.com/milaboratory/milib) is a core library for working with sequencing data, nucleotide and amino acid sequences, sequence alignment and pattern matching. The library is avalable in Maven central repository.
 
 * [VDJtools](https://github.com/mikessh/vdjtools) contains useful routines for handling immune repertoire data: parsing and handling clonotype sets. The library can be compiled from source and linked using Maven.
 
@@ -30,6 +30,38 @@ Currently available tasks:
 
 ---
 
-...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ![FMJ](https://i.ytimg.com/vi/GTQAXX08A-s/maxresdefault.jpg)

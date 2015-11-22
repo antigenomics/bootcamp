@@ -6,12 +6,13 @@ Read in a FASTQ file (``sample.fastq.gz``), align to germline sequences of Varia
 
 Using raw human TCR beta sequencing data:
 
-* Align each sequencing read to all possible V and J segments using ``KAligner``
+* Align each sequencing read to all possible V and J segments using a batch aligner
 * Generate a summary table with pairs of V and J segment names and corresponding count.
+* *(Optional)* Visualize in R with [RCircos](https://cran.r-project.org/web/packages/RCircos/index.html).
 
 ### Classes and snippets
 
-The task is performed using few basic classes from MiLib:
+The task is performed using some basic classes and ``KAligner`` from MiLib:
 
 ```java
 import com.milaboratory.milib.*;
