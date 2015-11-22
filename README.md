@@ -1,6 +1,6 @@
 ## Demonstrating the ability to solve basic computational tasks arising in immune repertoire sequencing data analysis
 
-This repository contains several tasks that are used to demonstrate the ability to understand and use basic functionality of our immune repertoire sequencing data analysis API, as well as decent coding skills. Each task folder contains all required data files in plain-text, [FASTQ](https://en.wikipedia.org/wiki/FASTQ_format) and [VDJtools clone set](http://vdjtools-doc.readthedocs.org/en/latest/input.html#vdjtools-format) formats.
+This repository contains several tasks that are used to assess the ability to understand and use basic functionality of our immune repertoire sequencing data analysis API, as well as coding skills. Each task folder contains all required data files in plain-text, [FASTQ](https://en.wikipedia.org/wiki/FASTQ_format) and [VDJtools clone set](http://vdjtools-doc.readthedocs.org/en/latest/input.html#vdjtools-format) formats. Code snippets provide lists of classes from our API and their usage examples relevant to each task.
 
 Solutions for tasks listed in this repository are to be implemented in [Java](http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html) or [Groovy](http://www.groovy-lang.org/), using Java 1.8 and [Apache Maven](https://maven.apache.org/) for dependency management is recommended.
 
@@ -30,38 +30,62 @@ Currently available tasks:
 
 ---
 
+&nbsp;
 
+&nbsp;
 
+&nbsp;
 
+&nbsp;
 
+&nbsp;
 
+&nbsp;
 
+&nbsp;
 
+&nbsp;
 
+&nbsp;
 
+&nbsp;
 
+&nbsp;
 
+&nbsp;
 
+&nbsp;
 
+&nbsp;
 
+&nbsp;
 
+&nbsp;
 
+&nbsp;
 
+&nbsp;
 
+&nbsp;
 
+&nbsp;
 
+&nbsp;
 
+&nbsp;
 
+&nbsp;
 
+&nbsp;
 
+&nbsp;
 
+&nbsp;
 
+&nbsp;
 
+&nbsp;
 
-
-
-
-
-
+&nbsp;
 
 ![FMJ](https://i.ytimg.com/vi/GTQAXX08A-s/maxresdefault.jpg)
