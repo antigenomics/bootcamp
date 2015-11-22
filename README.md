@@ -27,3 +27,9 @@ Currently available tasks:
 * [Task#2](https://github.com/antigenomics/bootcamp/tree/master/task2) Building CDR3 sequence similarity graph.
 
 * [Task#3](https://github.com/antigenomics/bootcamp/tree/master/task3) Constructing immunoglobulin tree.
+
+---
+
+...
+
+![FMJ](https://i.ytimg.com/vi/GTQAXX08A-s/maxresdefault.jpg)
