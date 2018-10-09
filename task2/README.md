@@ -46,7 +46,7 @@ stm.put(clonotype.getCdr3aaBinary(), clonotype);
 // Query index
 TreeSearchParameters treeSearchParameters = new TreeSearchParameters(...) // set the number of matches, etc for fuzzy search
 NeighborhoodIterator ni = stm.getNeighborhoodIterator(clonotype.getCdr3aaBinary(), treeSearchParameters);
-while (true) { // iterate over matches
+while (ni.hasNext()) { // iterate over matches
     Clonotype clonotype = ni.next();
 }
 ```
