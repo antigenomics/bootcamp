@@ -10,8 +10,8 @@ For each CDR3aa sequence in a sample, count number of neighbour
 
 1. Compute [degrees](https://en.wikipedia.org/wiki/Degree_distribution) (number of neighbors) ``d1`` and ``d2`` for each [CDR3](https://en.wikipedia.org/wiki/Complementarity-determining_region) amino acid (CDR3aa) sequence in the ``sample.txt`` file (``cdr3aa`` column) as follows:
 
-  1. ``d1`` is the number of CDR3aa sequences from the ``sample.txt`` file that differ from a given sequence by no more than ``1`` AA substitution (i.e. Hamming distance of ``1``)
-  2. ``d2`` is computed the same way, but we count the number of neighbor sequences in ``control.txt`` instead; i.e. count the degree assuming that a CDR3aa from ``sample.txt`` is placed into ``control.txt``
+  * ``d1`` is the number of CDR3aa sequences from the ``sample.txt`` file that differ from a given sequence by no more than ``1`` AA substitution (i.e. Hamming distance of ``1``)
+  * ``d2`` is computed the same way, but we count the number of neighbor sequences in ``control.txt`` instead; i.e. count the degree assuming that a CDR3aa from ``sample.txt`` is placed into ``control.txt``
 
 2. Assign a ``P-value`` to the degree ``d1`` of each CDR3aa in ``sample.txt`` using the Poisson distribution with mean ``d2 / N2 * N1`` where ``N1`` and ``N2`` is the total number of sequences in ``sample.txt`` and ``control.txt`` respectively.
 
