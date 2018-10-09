@@ -6,7 +6,9 @@ Solutions for tasks listed in this repository are to be implemented in [Java](ht
 
 > Note:
 
-> -- It is recommended to map some of the sequencing reads using [IgBlast](http://www.ncbi.nlm.nih.gov/igblast/igblast.cgi) and [BLAT](http://genome.ucsc.edu/cgi-bin/hgBlat), and browse clonotype tables using [VDJviz](http://vdjviz.milaboratory.com) to better understand the data structure.
+> -- [VDJviz](https://vdjviz.cdr3.net) and [VDJdb](https://vdjdb.cdr3.net/) can be of use for browsing the data (clonotype tables).
+
+> -- It is recommended to map some of the sequencing reads using [IgBlast](http://www.ncbi.nlm.nih.gov/igblast/igblast.cgi) and/or [BLAT](http://genome.ucsc.edu/cgi-bin/hgBlat).
 
 > -- It is also highly recommended to fork this repository and submit solutions as **pull requests**. In such case, provide some minimal unit test coverage for your source code and set up [Travis](https://travis-ci.org/) continuous integration system to automatically generate pull request build status.
 
@@ -27,3 +29,5 @@ Currently available tasks:
 * [Task#2](https://github.com/antigenomics/bootcamp/tree/master/task2) Building CDR3 sequence similarity graph.
 
 * [Task#3](https://github.com/antigenomics/bootcamp/tree/master/task3) Constructing immunoglobulin tree.
+
+* [Task#4](https://github.com/antigenomics/bootcamp/tree/master/task4) Finding enriched TCR motifs.
