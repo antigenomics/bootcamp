@@ -1,10 +1,10 @@
 ## Task 4: Finding enriched TCR motifs.
 
-The objective of this 
+The problem covered by the task can be formulated as follows:
 
-Read in "sample.txt" and "control.txt". These files are in VDJtools format
+Given a sample with amino acid sequences of interest and a control sample with random sequences, find a group of homologous amino acid sequences in the sample of interest that has more members than expected by chance.
 
-For each CDR3aa sequence in a sample, count number of neighbour
+The solution to be implemented is based on a) building a graph of sequences, with edges connecting sequences that differ by a single mismatch, and b) counting the number of adjacent nodes for each node of a graph and looking for nodes with unexpectedly high number of neighbors.
 
 ### Plan / Subtasks
 
@@ -13,7 +13,7 @@ For each CDR3aa sequence in a sample, count number of neighbour
   * ``d1`` is the number of CDR3aa sequences from the ``sample.txt`` file that differ from a given sequence by no more than ``1`` AA substitution (i.e. Hamming distance of ``1``)
   * ``d2`` is computed the same way, but we count the number of neighbor sequences in ``control.txt`` instead; i.e. count the degree assuming that a CDR3aa from ``sample.txt`` is placed into ``control.txt``
 
-2. Assign a ``P-value`` to the degree ``d1`` of each CDR3aa in ``sample.txt`` using the Poisson distribution with mean ``d2 / N2 * N1`` where ``N1`` and ``N2`` is the total number of sequences in ``sample.txt`` and ``control.txt`` respectively.
+2. Assign a ``P-value`` to the degree ``d1`` of each CDR3aa in ``sample.txt`` using the Poisson distribution with mean ``d2 / N2 * N1`` where ``N1`` and ``N2`` is the total number of sequences in ``sample.txt`` and ``control.txt`` respectively. I.e. we compute ``1-P(1..(d1-1) | d2 / N2 * N1)``.
 
 3. Select top ``N`` (say ``N=10``) CDR3aa sequences with the best P-value. Build a graph that includes these CDR3aa, their first neighbors in ``sample.txt``, and all possible edges with Hamming distance of ``1``. Select the largest connected component of the graph.
 
