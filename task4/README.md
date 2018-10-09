@@ -13,7 +13,7 @@ The solution to be implemented is based on a) building a graph of sequences, wit
   * ``d1`` is the number of CDR3aa sequences from the ``sample.txt`` file that differ from a given sequence by no more than ``1`` AA substitution (i.e. Hamming distance of ``1``)
   * ``d2`` is computed the same way, but we count the number of neighbor sequences in ``control.txt`` instead; i.e. count the degree assuming that a CDR3aa from ``sample.txt`` is placed into ``control.txt``
 
-2. Assign a ``P-value`` to the degree ``d1`` of each CDR3aa in ``sample.txt`` using the Poisson distribution with mean ``d2 / N2 * N1`` where ``N1`` and ``N2`` is the total number of sequences in ``sample.txt`` and ``control.txt`` respectively. I.e. we compute ``1 - P(1..(d1-1) | d2 / N2 * N1)``.
+2. Assign a ``P-value`` to the degree ``d1`` of each CDR3aa in ``sample.txt`` using the Poisson distribution with mean ``d2 / N2 * N1`` where ``N1`` and ``N2`` is the total number of sequences in ``sample.txt`` and ``control.txt`` respectively. I.e. we compute ``1 - Poisson(0..(d1-1) | d2 / N2 * N1)``.
 
 3. Select top ``N`` (say ``N=10``) CDR3aa sequences with the best P-value. Build a graph that includes these CDR3aa, their first neighbors in ``sample.txt``, and all possible edges with Hamming distance of ``1``. Select the largest connected component of the graph.
 
